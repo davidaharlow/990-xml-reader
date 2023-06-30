@@ -24,6 +24,9 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+.DS_Store
+irs_reader/.DS_Store
+
 
 # PyInstaller
 #  Usually these files are written by a python script from a template

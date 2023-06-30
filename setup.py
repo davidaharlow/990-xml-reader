@@ -1,8 +1,8 @@
 from distutils.core import setup
 import os
 
-NAME = 'irsx'
-HUMAN_NAME = 'irsx'
+NAME = 'zenitechcyber_irsx'
+HUMAN_NAME = 'zenitechcyber_irsx'
 HERE = os.path.abspath(os.path.dirname(__file__))
 version_ns = {}
 with open(os.path.join(HERE, 'irs_reader', '_version.py')) as f:
@@ -12,9 +12,9 @@ setup(name=HUMAN_NAME,
       description = "Turn the IRS' versioned XML 990's into python objects \
         with original line number and description.",
       version = version_ns['__version__'],
-      author = 'Jacob Fenton',
-      author_email = 'jsfenfen@gmail.com',
-      url = 'https://github.com/jsfenfen/990-xml-reader',
+      author = 'David Harlow',
+      author_email = 'david@uptokyn.com',
+      url = 'https://github.com/davidaharlow/990-xml-reader',
       license = 'MIT',
       setup_requires = ["setuptools", ],
       install_requires = ['requests', 'xmltodict', 'unicodecsv'],
@@ -24,9 +24,9 @@ setup(name=HUMAN_NAME,
       package_data = {'irsx': ['metadata/*.csv']},
       keywords = ['990', 'nonprofit', 'tax'],
       entry_points = {
-          "console_scripts": ["irsx=irsx.irsx_cli:main",
-                              "irsx_index=irsx.irsx_index_cli:main",
-                              "irsx_retrieve=irsx.irsx_retrieve_cli:main"]
+          "console_scripts": ["zenitechcyber_irsx=irsx.irsx_cli:main",
+                              "zenitechcyber_irsx_index=irsx.irsx_index_cli:main",
+                              "zenitechcyber_irsx_retrieve=irsx.irsx_retrieve_cli:main"]
       },
       classifiers=[
           # How mature is this project? Common values are
