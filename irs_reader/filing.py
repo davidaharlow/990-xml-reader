@@ -59,7 +59,9 @@ class Filing(object):
         """
         Files are no longer downloadable. 
         """
-        
+        print("This is the filepath")
+        print(self.filepath)
+
         if os.path.isfile(self.filepath):
             return True
         else: 
